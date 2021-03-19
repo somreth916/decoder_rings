@@ -17,16 +17,18 @@ const polybiusModule = (function () {
     };
     const digits = {
       11: "a", 21: "b", 31: "c", 41: "d", 51: "e",
-      12: "f", 22: "g", 32: "h", 52: "k", 31: "l",
+      12: "f", 22: "g", 32: "h", 52: "k", 13: "l",
       23: "m", 33: "n", 43: "o", 53: "p", 14: "q",
       24: "r", 34: "s", 44: "t", 54: "u", 15: "v",
       25: "w", 35: "x", 45: "y", 55: "z", 42: "(i/j)", 99: " "
     };
+    const inputLower = input.toLowerCase();
+    
     // Checks if this is an encoder or decoder
     if (encode) {
       const result = [];
-      for (idx in input) {
-        const character = input[idx];
+      for (idx in inputLower) {
+        const character = inputLower[idx];
         let num = letters[character];
         if (num === undefined) {
           num = " ";
