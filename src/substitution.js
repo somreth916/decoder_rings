@@ -25,15 +25,15 @@ const substitutionModule = (function () {
       "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
       "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
     ];
-
+    const inputLower = input.toLowerCase();
     // Error handling
     if (!alphabet || alphabet.length !== 26 || !checkForRepeat(alphabet)) {
       return false;
     };
 
     if (encode) {
-      for (idx in input) {
-        const inputChar = input[idx];
+      for (idx in inputLower) {
+        const inputChar = inputLower[idx];
         if (inputChar === " ") {
           result += inputChar;
         }
@@ -49,8 +49,8 @@ const substitutionModule = (function () {
       }
     }
     else {
-      for (idx in input) {
-        const inputChar = input[idx];
+      for (idx in inputLower) {
+        const inputChar = inputLower[idx];
         if (inputChar === " ") {
           result += inputChar;
         }
