@@ -60,9 +60,6 @@ describe("caesar()", () => {
 })
 
 // Check if shift value is not present, equal to 0, less than -25, or greater than 25, the function should return false.
-
 // Spaces should be maintained, as should other non-alphabetic symbols.
-
 // Capital letters can be ignored, set to lower case.
-
 // If a letter goes "off" the alphabet, it should wrap around to the front of the alphabet.
