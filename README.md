@@ -30,4 +30,7 @@ Takes in a letter and a substitution alphabet which is a randomized alphabet giv
 [![15.png](https://i.postimg.cc/Qdk5XXG9/15.png)](https://postimg.cc/4YynPR3s)
 
 ## Technology
+- HTML
+- CSS
+- JavaScript
 #### These functions were written in JavaScript purely as a way to practice and learn more about the inner workings of how a user could encode a secret message and decode it with relative ease.
